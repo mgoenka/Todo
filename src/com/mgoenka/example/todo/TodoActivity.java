@@ -3,6 +3,8 @@ package com.mgoenka.example.todo;
 import android.os.Bundle;
 import android.app.Activity;
 import android.view.Menu;
+import android.view.View;
+import android.widget.Toast;
 
 public class TodoActivity extends Activity {
 
@@ -12,11 +14,9 @@ public class TodoActivity extends Activity {
 		setContentView(R.layout.activity_todo);
 	}
 
-	@Override
-	public boolean onCreateOptionsMenu(Menu menu) {
-		// Inflate the menu; this adds items to the action bar if it is present.
-		getMenuInflater().inflate(R.menu.todo, menu);
-		return true;
+	public void onAdd(View v) {
+		// Generating an alert in Android
+		Toast.makeText(getBaseContext(), "Hello World", Toast.LENGTH_SHORT).show();
 	}
 
 }
